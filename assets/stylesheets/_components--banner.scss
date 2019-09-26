@@ -1,0 +1,47 @@
+/*
+ * Styles for Versatile Banner theme component
+ * https://meta.discourse.org/t/versatile-banner/109133
+ */
+.banner-box {
+  .banner-heading {
+    font-size: 3rem;
+    text-align: left !important;
+    color: #ff4423;
+  }
+
+  .section-header {
+    padding-bottom: 10px;
+  }
+
+  .banner-description {
+    font-size: 1.3rem;
+    color: #2b2b2b;
+  }
+
+  .banner-sub-heading {
+    font-size: 1.8rem;
+    text-align: left !important;
+    color: #2b2b2b;
+  }
+
+  .banner-sub-description {
+    font-size: 1.1rem;
+    text-align: left;
+  }
+
+  .btn.btn-banner {
+    font-size: 1.1rem;
+  }
+
+  .banner-actions {
+    text-align: left;
+  }
+
+  #banner-content_wrap {
+    .row {
+      .single-box {
+        padding: 0 0 15px;
+      }
+    }
+  }
+}
