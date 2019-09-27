@@ -4,9 +4,9 @@
  */
 .banner-box {
   .banner-heading {
+    color: #ff4423;
     font-size: 3rem;
     text-align: left !important;
-    color: #ff4423;
   }
 
   .section-header {
@@ -14,14 +14,15 @@
   }
 
   .banner-description {
-    font-size: 1.3rem;
     color: #2b2b2b;
+    font-size: 1.3rem;
+    margin-bottom: 0;
   }
 
   .banner-sub-heading {
+    color: #2b2b2b;
     font-size: 1.8rem;
     text-align: left !important;
-    color: #2b2b2b;
   }
 
   .banner-sub-description {
