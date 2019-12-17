@@ -1,4 +1,4 @@
-$signup-min-height: 550px;
+$signup-min-height: auto;
 
 .d-modal.create-account,
 .d-modal.login-modal {
@@ -31,6 +31,13 @@ $signup-min-height: 550px;
       tr {
         margin-top: 0;
       }
+    }
+
+    // We are not requiring users fields anymore
+    // This is the recommended way by the Discourse team
+    // https://meta.discourse.org/t/site-setting-to-hide-custom-user-fields-from-signup-page/130990/3
+    .user-fields {
+      display: none;
     }
   }
 }

@@ -1,6 +1,10 @@
 .modal {
   .modal-header {
     padding: 5px 10px;
+
+    .modal-close {
+      border: 0;
+    }
   }
 }
 
