@@ -10,6 +10,8 @@ This theme expect the community to have set **Categories only** as a homepage, y
 
 ## Development
 
+## Discourse Theme creator
+
 There are different ways to approach this, using a local setup of Discourse and using the [Theme creator](https://theme-creator.discourse.org/) which doesn't need much further setup for you to start the development process but it does need **internet connection to develop**. Check [Beginners’ guide to using Theme Creator and Theme CLI to start building a Discourse theme](https://meta.discourse.org/t/beginners-guide-to-using-theme-creator-and-theme-cli-to-start-building-a-discourse-theme/108444), after complete you should be ready to start.
 
 Once you are set you should be able to run
@@ -18,6 +20,15 @@ Once you are set you should be able to run
 cd /path/to/folder_containing_debtcollective-theme
 discourse_theme watch debtcollective-theme
 ```
+
+## Local Discourse installation
+
+This uses the same [Theme CLI](https://meta.discourse.org/t/discourse-theme-cli-console-app-to-help-you-build-themes/82950) as the Theme creator method, but you make the changes against a local Discourse installation.
+
+The steps are the same as above, but when configuring the instance you enter:
+
+1. `http://localhost:3000` as the host
+2. API key for your local installation, you can [get them here](http://localhost:3000/admin/api/keys). Make sure to create it just for your user only.
 
 ### VSCode
 
