@@ -27,15 +27,17 @@ export default createWidget("dc-topic-title", {
   buildTopicTags(attrs) {
     const tags = attrs.tags;
 
-    return tags.map(tag => h('a.dc-topic-tag', {
-      attributes: {
-        href: `/tag/${tag}`
-      }
-    }, tag));
+    if (tags) {
+      return tags.map(tag => h('a.dc-topic-tag', {
+        attributes: {
+          href: `/tag/${tag}`
+        }
+      }, tag));
+    }
   },
 
   buildTopicInfo(attrs) {
-    return [this.buildCategory(attrs), this.buildTopicTags(attrs)];
+    return [this.buildCategory(attrs), this.buildTopicTags(attrs)].filter(Boolean);
   },
 
   html(attrs, state) {
